@@ -13,5 +13,24 @@ int add(int a, int b)
 
 int subtract(int a, int b)
 {
-    return a * b;
+    return a - b;
+}
+
+int multiply(int a, int b) {
+	return a * b;
+}
+
+int divide(int a, int b) {
+	return a / b;
+}
+
+int fat(int a) {
+
+	int total = a;
+
+	for (int i = 1; i < a; i++) {
+		total *= a-i;
+	}
+
+	return total;
 }
